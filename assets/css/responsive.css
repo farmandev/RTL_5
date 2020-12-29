@@ -1,11 +1,105 @@
 /* LG Device :992px. */
 
-@media only screen and (min-width: 1400px) and (max-width: 1919px) {
+@media only screen and (min-width: 1920px) {}
+
+@media only screen and (min-width: 1440px) {
+    .sidebar {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+    .home-ver {
+        width: 28%;
+    }
+
+    .home-ver:hover {
+        width: 35% !important;
+    }
+
+    .home-ver-img-text h2 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .home-ver-img-text span {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .home-ver-img-text p {
+        margin: 0 24px 0 50px;
+    }
+
     .home-ver-text a {
         font-size: 24px;
         line-height: 30px;
     }
-   
+
+    .home-ver-text a span {
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    .home-ver {
+        width: 28%;
+    }
+
+    .home-ver:hover {
+        width: 35% !important;
+    }
+
+    .home-ver-img-text h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0 72px 0 20px;
+    }
+
+    .home-ver-img-text span {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 0 62px 12px 20px;
+    }
+
+    .home-ver-img-text p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 24px 0 50px;
+    }
+
+    .home-ver-text a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .home-ver-text a span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .hemo-ver-img {
+        height: 350px;
+    }
+
+    .home-logo a img {
+        max-width: 120px;
+    }
+
+    .home-ver-img-text {
+        padding-bottom: 45px;
+    }
+
+    .home-ver-text a span i {
+        font-size: 21px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -39,6 +133,10 @@
 
     .hero_wrap.v2 {
         height: 55vh;
+    }
+
+    .search-box {
+        width: 157px;
     }
 
     .service_wrap.bg_grey {
