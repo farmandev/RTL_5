@@ -1,6 +1,11 @@
 /* LG Device :992px. */
 
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {
+    p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
 
 @media only screen and (min-width: 1440px) {
     .sidebar {
@@ -783,6 +788,9 @@
     }
 
     .about-content {
+        text-align: center;
+    }
+    .vision-wrap{
         text-align: center;
     }
 }

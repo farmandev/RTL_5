@@ -112,6 +112,10 @@ a:hover {
     color: #5987C6 !important;
 }
 
+.text-white {
+    color: #fff !important;
+}
+
 /*---------------Header Top CSS ---------------*/
 
 .header_top_left {
@@ -2258,6 +2262,28 @@ a.blog_more {
     background: #fff;
 }
 
+.content-title h4 {
+    font-size: 42px;
+    font-family: "Assistant Bold";
+    color: #fff;
+    font-weight: 300;
+    line-height: 56px;
+    padding-right: 20px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.content-title h4:before {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    content: "";
+    background: #fff;
+    width: 6px;
+    height: 100%;
+}
+
 .product_showcase {
     padding: 80px 0;
 }
@@ -2839,7 +2865,13 @@ a.blog_more {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     position: relative;
-    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-para {
+    margin: 50px 0 0;
 }
