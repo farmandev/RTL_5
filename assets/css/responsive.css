@@ -438,6 +438,11 @@
         text-align: center;
     }
 
+    .breadcrumb-title h4 {
+
+        display: inline-block;
+    }
+
     .post-details,
     .recent-post {
         text-align: center;
@@ -775,5 +780,9 @@
 
     .simple_icon_wrap.v1 .simple__item {
         width: 48%;
+    }
+
+    .about-content {
+        text-align: center;
     }
 }
