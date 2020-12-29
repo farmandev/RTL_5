@@ -268,15 +268,17 @@ a:hover {
 
 .search_icon {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     cursor: pointer;
-    background:transparent;
+    background: transparent;
     border: none;
 }
+
 #search_box:focus {
     border-bottom: 1px solid #777;
 }
+
 /*-----Dropdown starts------*/
 .site-menu .has-children {
     position: relative;
@@ -1235,7 +1237,7 @@ button.search_btn {
 }
 
 .home-logo {
-    padding: 25px;
+    padding: 20px;
     justify-content: flex-end;
     display: flex;
 }
@@ -2117,17 +2119,34 @@ a.blog_more {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    position: relative;
+
 }
 
 .breadcrumb-wrap.v1 {
     height: 185px;
     background-color: #474747;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 
+}
+
+.breadcrumb-wrap.v2 {
+    height: 520px;
+    background-color: #000000;
+
+}
+
+.breadcrumb-wrap.v2 .bredcrumb-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 30px 0;
 }
 
 .breadcrumb_content {
@@ -2141,9 +2160,11 @@ a.blog_more {
     position: relative;
     color: #fff;
 }
-.breadcrumb_menu li:last-child{
+
+.breadcrumb_menu li:last-child {
     font-weight: 700;
 }
+
 .breadcrumb_menu li:after {
     position: absolute;
     top: -6px;
@@ -2159,11 +2180,13 @@ a.blog_more {
     font-weight: 500;
 }
 
-.breadcrumb-wrap.v1 .breadcrumb_menu li a {
+.breadcrumb-wrap.v1 .breadcrumb_menu li a,
+.breadcrumb-wrap.v2 .breadcrumb_menu li a {
     color: #fff;
 }
 
-.breadcrumb-wrap.v1 .breadcrumb_menu li:after {
+.breadcrumb-wrap.v1 .breadcrumb_menu li:after,
+.breadcrumb-wrap.v2 .breadcrumb_menu li:after {
     color: #fff;
 }
 
@@ -2210,6 +2233,21 @@ a.blog_more {
     margin: 40px 0 0;
     font-weight: 300;
     line-height: 52px;
+}
+
+.breadcrumb-wrap.v2 .breadcrumb-title h4 {
+    position: relative;
+    padding-right: 30px;
+}
+
+.breadcrumb-wrap.v2 .breadcrumb-title h4:before {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    content: "";
+    background: #F04E30;
+    width: 6px;
+    height: 100%;
 }
 
 .product_showcase {
@@ -2430,14 +2468,15 @@ a.blog_more {
 /*---------------------------------
         Blog Page
 ----------------------------------*/
-.content-wrap{
+.content-wrap {
     padding: 80px 0 80px;
 }
+
 .recent-post h5 {
     font-size: 26px;
     color: #4F4F4F;
-    line-height: 26px;
-    margin: 0 0 15px;
+    line-height: 32px;
+    margin: 0 0 12px;
 }
 
 .recent-post ul li a {
@@ -2468,7 +2507,7 @@ a.blog_more {
     font-size: 28px;
     font-family: "OpenSansHebrew Bold";
     color: rgb(60, 60, 60);
-    line-height: 26px;
+    line-height: 32px;
     margin: 0 0 25px;
 
 }
@@ -2484,13 +2523,16 @@ a.blog_more {
     margin: 0 0 30px;
 
 }
-.social-share{
+
+.social-share {
     margin: 10px 0 30px;
 }
+
 .social-share li {
     display: inline-block;
     margin: 0 1px;
 }
+
 .social-share li a {
     display: block;
     width: 50px;
@@ -2499,12 +2541,15 @@ a.blog_more {
     padding: 5px 0;
     border-radius: 5px;
 }
+
 .social-share li a.linkedin {
     background: #0077B5;
 }
+
 .social-share li a.facebook {
     background: #1E77F0;
 }
+
 .social-share li a.twitter {
     background: #55ACEE;
 }
@@ -2512,6 +2557,7 @@ a.blog_more {
 .social-share li a.mail {
     background: #96A2A8;
 }
+
 .social-share li a i {
     color: #fff;
 }
