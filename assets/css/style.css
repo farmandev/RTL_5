@@ -116,6 +116,10 @@ a:hover {
     color: #fff !important;
 }
 
+.bg-grey {
+    background-color: #F7F7F7;
+}
+
 /*---------------Header Top CSS ---------------*/
 
 .header_top_left {
@@ -2924,12 +2928,50 @@ a.blog_more {
         Lense Page Css
 ----------------------------------*/
 
+.select-glass-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-bottom: 1px solid #CFCFCF;
+    padding:25px 0 15px;
+    margin: 0 0 20px;
+}
+
+.select-glass-title-left {
+    width: 35%;
+}
+
+.select-glass-title-right {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.clear-btn {
+    background: #F14D31;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 1px 25px;
+    margin-left: 15px;
+}
+.glass-property p{
+    line-height: 18px;
+    margin: 0 0 8px;
+}
 .select-glass-wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .image-slider {
     width: 60%;
 }
@@ -2973,4 +3015,45 @@ a.blog_more {
 .glass-type img {
     width: 100%;
     padding: 0 20px;
+}
+
+.related-products.bg-grey {
+    padding: 80px 0 50px;
+}
+
+h3.title {
+    font-size: 32px;
+    line-height: 34px;
+    font-family: "Assistant Bold";
+}
+
+.glass-item {
+    margin: 0 0 30px;
+}
+
+.glass-img {
+    background: #fff;
+    min-height: 270px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.glass-info {
+    display: block;
+    margin: 15px 0 0;
+}
+
+.glass-info h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.glass-info span {
+    font-size: 18px;
+    line-height: 28px;
+    color: #9C9C9C;
 }
