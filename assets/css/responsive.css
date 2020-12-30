@@ -1,9 +1,13 @@
 /* LG Device :992px. */
 
 @media only screen and (min-width: 1920px) {
-    p{
+    p {
         font-size: 18px;
         line-height: 28px;
+    }
+
+    .container-fluid {
+        padding: 0 65px!important;
     }
 }
 
@@ -790,7 +794,8 @@
     .about-content {
         text-align: center;
     }
-    .vision-wrap{
+
+    .vision-wrap {
         text-align: center;
     }
 }
