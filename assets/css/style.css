@@ -2211,7 +2211,10 @@ a.blog_more {
     display: inline-block;
     margin: 0 0 0 15px;
     position: relative;
-    color: #fff;
+}
+.breadcrumb-wrap.v1 .breadcrumb_menu li,
+.breadcrumb-wrap.v2 .breadcrumb_menu li {
+    color: #fff!important;
 }
 
 .breadcrumb_menu li:last-child {
@@ -2224,6 +2227,7 @@ a.blog_more {
     left: -12px;
     content: "/";
     font-size: 22px;
+    color: #000000;
 }
 
 .breadcrumb_menu li a {
@@ -2240,7 +2244,7 @@ a.blog_more {
 
 .breadcrumb-wrap.v1 .breadcrumb_menu li:after,
 .breadcrumb-wrap.v2 .breadcrumb_menu li:after {
-    color: #fff;
+    color: #fff!important;
 }
 
 .breadcrumb_menu li:last-child:after {
