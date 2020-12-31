@@ -21,7 +21,7 @@
     /*=========================
       OwlCarousel START
     ===========================*/
-   
+
     $(".partner_slider").owlCarousel({
         items: 5,
         nav: true,
@@ -124,6 +124,15 @@
         ------------------------------------------- */
     $('.select_box').niceSelect();
 
+    $('.glass-type').on('click', function() {
+        $(this).toggleClass('selected');
+        $(this).parent().siblings().find('.glass-type').removeClass('selected');
+    });
+
+    $('.read-more_btn').on('click',function(){
+        $(this).addClass('d-none');
+        $(this).parent('.job-post').find('.read-more').slideDown(600);
+    });
 
 
     /*------------------------

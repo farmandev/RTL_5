@@ -586,7 +586,7 @@ a:hover {
     transition: .3s all ease;
     border: solid black;
     border-width: 0 2px 2px 0;
-    display: inline-block;
+    display: block;
     padding: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -668,6 +668,25 @@ a:hover {
 
 .chat_box i {
     font-size: 19px;
+}
+
+.fixed-searchbox {
+    display: inline-block;
+    cursor: pointer;
+    background: #E1E1E1;
+    color: #fff;
+    padding: 12px 13px;
+    position: fixed;
+    top: 565px;
+    left: -5px;
+    z-index: 999;
+    transform: rotate(-90deg);
+}
+
+.fixed-searchbox button {
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 .page_wrapper {
@@ -1069,6 +1088,40 @@ a:hover {
     border-color: transparent;
     background-color: #fff;
     color: #000;
+}
+
+.btn.v8 {
+    font-size: 22px;
+    line-height: 22px;
+    color: #5987C6;
+    border: 1px solid #5987C6;
+    border-radius: 0;
+    padding: 10px 18px;
+}
+
+.btn.v8 img {
+    margin-right: 13px;
+}
+
+.btn.v9 {
+    display: block;
+    width: 100%;
+    background: #5987C6;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "Assistant Bold";
+    border-radius: 0;
+    border: 1px solid transparent;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.btn.v9:hover {
+    border-color: #5987C6;
+    color: #5987C6;
+    background-color: transparent;
 }
 
 .bg_grey {
@@ -2212,9 +2265,10 @@ a.blog_more {
     margin: 0 0 0 15px;
     position: relative;
 }
+
 .breadcrumb-wrap.v1 .breadcrumb_menu li,
 .breadcrumb-wrap.v2 .breadcrumb_menu li {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .breadcrumb_menu li:last-child {
@@ -2244,7 +2298,7 @@ a.blog_more {
 
 .breadcrumb-wrap.v1 .breadcrumb_menu li:after,
 .breadcrumb-wrap.v2 .breadcrumb_menu li:after {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .breadcrumb_menu li:last-child:after {
@@ -2843,13 +2897,22 @@ a.blog_more {
 }
 
 .submit_btn {
-    background: #F14D31;
     color: #fff;
     border: none;
-    padding: 7px 24px;
+    padding: 5px 24px;
     text-align: center;
     font-family: "Assistant Bold";
     width: 56%;
+}
+
+.submit_btn.v1 {
+    background: #F14D31;
+
+}
+
+.submit_btn.v2 {
+    background: #5987C6;
+
 }
 
 .about-title h4 {
@@ -2938,7 +3001,7 @@ a.blog_more {
     flex-wrap: wrap;
     align-items: flex-start;
     border-bottom: 1px solid #CFCFCF;
-    padding:25px 0 15px;
+    padding: 25px 0 15px;
     margin: 0 0 20px;
 }
 
@@ -2965,10 +3028,12 @@ a.blog_more {
     padding: 1px 25px;
     margin-left: 15px;
 }
-.glass-property p{
+
+.glass-property p {
     line-height: 18px;
     margin: 0 0 8px;
 }
+
 .select-glass-wrap {
     display: flex;
     justify-content: space-between;
@@ -3060,4 +3125,315 @@ h3.title {
     font-size: 18px;
     line-height: 28px;
     color: #9C9C9C;
+}
+
+/*--------------------------------
+        Product Page Css
+----------------------------------*/
+
+.product-title {
+    font-size: 36px;
+    line-height: 38px;
+    font-family: "Assistant Bold";
+    margin: 0;
+}
+
+.product-details span {
+    font-size: 28px;
+    line-height: 52px;
+    color: #898989;
+    text-transform: capitalize;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.product-details ul li p {
+    margin: 0;
+    position: relative;
+    padding: 0 10px 0 0;
+}
+
+.product-details ul li p:before {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    content: "";
+    background: #000;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.product-action-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 50px;
+}
+
+.product-action-btn button {
+    font-size: 26px;
+    line-height: 1;
+    width: 48.5%;
+    font-weight: 700;
+    padding: 8px 5px 12px;
+}
+
+.product-action-btn button.v1 {
+    border: 1px solid #000;
+    background: transparent;
+    text-align: center;
+    font-weight: ;
+}
+
+.product-action-btn button.v2 {
+    background: #EF4E31;
+    color: #fff;
+    border: none;
+}
+
+.faq_wrapper .accordion button {
+    width: 100%;
+    border: none;
+    background-color: #F2F2F2;
+    padding: 15px 15px 15px 45px;
+    margin-top: 10px;
+    position: relative;
+    text-align: right;
+    line-height: 1;
+    font-size: 22px;
+}
+
+.faq_wrapper .accordion button::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/plus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 17px;
+    width: 14px;
+    height: 14px;
+    top: 28px;
+    transform: translateY(-50%);
+}
+
+.faq_wrapper .accordion button[aria-expanded="true"]::before {
+    background-image: url(../img/close.png);
+}
+
+.answer_box {
+    background: #F2F2F2;
+    border-top: 1px solid #D4D4D4;
+    padding: 25px 25px;
+}
+
+.answer_box p {
+    color: #707070;
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.product-large {
+    border: 1px solid #DFDFDF;
+    margin: 0 0 15px;
+}
+
+.nav.nav-tabs.product-slider-list {
+    display: grid;
+    border: none;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+.nav.nav-tabs.product-slider-list li {
+    border: 1px solid #DFDFDF;
+    text-align: center;
+}
+
+
+/*--------------------------------
+        Contact Page CSS
+----------------------------------*/
+.company-contact-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.company-contact-area.bg-grey {
+    padding: 75px 0 65px;
+}
+
+
+.contact-item {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-item:after {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    content: "";
+    background: #DEDEDE;
+    width: 1px;
+    height: 60px;
+}
+
+.contact-item:last-child:after {
+    display: none;
+}
+
+.contact-item img {
+    max-width: 30px;
+}
+
+.contact-item:nth-child(1),
+.contact-item:nth-child(4) {
+    width: 30%;
+
+}
+
+.contact-item:nth-child(2),
+.contact-item:nth-child(3) {
+    width: 20%;
+}
+
+.contact-info {
+    padding-right: 15px;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0;
+    display: block;
+}
+
+.contact-form input {
+    width: 100%;
+    border: 1px solid #C5C5C5;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    color: #6B6B6B;
+}
+
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #C5C5C5;
+    height: 140px;
+    padding: 10px;
+    font-size: 20px;
+    color: #6B6B6B;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    opacity: 1;
+}
+
+.contact-form {
+    margin: 60px 0 0;
+}
+
+.contact_submit {
+    border: none;
+    color: #fff;
+    width: 320px;
+    line-height: 1;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.contact_submit.v1 {
+    background: #F04E30;
+}
+
+.contact_submit.v2 {
+    background: #5987C6;
+}
+
+.contact-form .form-group {
+    margin: 0 0 30px;
+}
+
+/*--------------------------------
+        Career Page CSS
+----------------------------------*/
+
+.job-post {
+    border: 1px solid #CCC;
+    padding: 50px 40px;
+    margin: 0 0 45px;
+}
+
+.job-post h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "OpenSansHebrew Bold";
+    margin: 0 0 30px;
+}
+
+.job-post p {
+    margin: 0 0 25px;
+}
+
+.read-more {
+    display: none;
+}
+
+.file-upload-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E4E4E4;
+    flex-wrap: wrap;
+    padding: 8px 15px;
+    margin: 0 0 30px;
+}
+
+.file {
+    position: relative;
+    order: 1;
+}
+
+.file>label {
+    cursor: pointer;
+    outline: 0px;
+    user-select: none;
+    background-color: #636363;
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px 17px 6px 12px;
+}
+
+.file>input[type="file"] {
+    display: none;
+}
+
+.file-upload-wrap button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    line-height: 26px;
+    color: #707070;
+    padding: 0;
+}
+
+.file>label img {
+    margin-left: 5px;
+    max-width: 19px;
 }
