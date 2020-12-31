@@ -715,11 +715,12 @@
     .service_item.v4 .service_info {
         bottom: -30px;
         width: 123%;
-        left: 54px;
+        left: 64px;
         height: 100px;
     }
 
-    .mt-260 {
+    .mt-260,
+    .mt_100 {
         margin-top: 0px !important;
     }
 
@@ -727,9 +728,9 @@
         transform: rotate(-315deg);
         font-size: 18px;
         line-height: 22px;
-        bottom: -28px;
+        bottom: -25px;
         width: 100%;
-        left: -72px;
+        left: -79px;
         height: 110px;
         padding: 10px 0px 5px 0px;
     }
@@ -1015,8 +1016,9 @@
         width: 100%;
         margin: 0 0 20px;
     }
+
     .gamida_title {
-    font-size: 30px;
-    line-height: 35px;
-}
+        font-size: 30px;
+        line-height: 35px;
+    }
 }
