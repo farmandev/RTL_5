@@ -145,16 +145,17 @@
         if (element.hasClass('open')) {
             element.removeClass('open');
             element.find('li').removeClass('open');
-            element.find('ul').slideUp();
+            element.find('ul').toggleClass('d-block');
         } else {
             element.addClass('open');
-            element.children('ul').slideDown();
+            element.children('ul').toggleClass('d-block');
             element.siblings('li').children('ul').slideUp();
             element.siblings('li').removeClass('open');
             element.siblings('li').find('li').removeClass('open');
-            element.siblings('li').find('ul').slideUp();
+            element.siblings('li').find('ul').removeClass('d-block');
         }
     });
+
 
 
 
